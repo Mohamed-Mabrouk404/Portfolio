@@ -159,7 +159,7 @@ form input[type="submit"]:hover{
         justify-content: center;
         align-items: center;
         gap: 30px;
-        padding: 0px;
+        padding: 0px 0px 10px;
     }
     .contact-info{
         width: 100%;
@@ -172,5 +172,9 @@ form input[type="submit"]:hover{
     .social-media{
         justify-content: center;
         padding: 20px 0px;
+    }
+    .contact-container .glow{
+        top: 400px;
+        right: 50px;
     }
 }
