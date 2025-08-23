@@ -1,0 +1,30 @@
+.skills-component{
+    background-color: var(--theme-color);
+    font-family: var(--default-font);
+    padding: 20px 0px 100px 0px;
+    
+}
+.skills-content{
+    /* background-color: rgb(56, 56, 56); */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+}
+.skill{
+    background-color: rgba(170, 0, 255, 0.201);
+    border: 1px solid rgba(170, 0, 255, 0.201);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    user-select: none;
+}
+.skill:hover{
+    background-color: rgba(170, 0, 255, 0.304);
+    border: 1px solid rgba(170, 0, 255, 0.447);
+    transition: 0.3s;
+}
+.skill i{
+    margin-right: 10px;
+}

@@ -1,0 +1,147 @@
+.projects-page {
+  min-height: 100vh;
+  background-color: var(--theme-color);
+
+  position: relative;
+
+  padding-bottom: 100px;
+}
+
+.icon-cover {
+  /* background: linear-gradient(70deg, rgba(231, 201, 34, 0.199), rgba(255, 217, 0, 0.107));  */
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  /* box-shadow: 1px 0.5px 10px rgba(205, 195, 0, 0.233);  */
+
+}
+
+.page-placeholder {
+  font-family: 'Mestika';
+  font-size: 14vw;
+  color: rgba(199, 169, 0, 0.171);
+  text-align: center;
+  margin-top: 20px;
+
+
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
+  /* background-color: green; */
+}
+
+.project-item {
+  background-color: red;
+  width: 450px;
+  background: linear-gradient(170deg, rgba(255, 255, 255, 0.174), rgba(255, 255, 255, 0.021));
+  border-radius: 10px;
+  padding: 5px 5px 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project-item::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  /* top: 0; */
+  /* right: -100px; */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.187), rgba(255, 255, 255, 0));
+  background: linear-gradient(140deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.158), rgba(255, 255, 255, 0));
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.project-img img {
+  width: 400px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.project-item h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+  color: rgb(199, 169, 0);
+  color: white;
+  margin: 10px 0;
+  /* padding: 10px 10px 0px; */
+}
+
+.project-item p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2rem;
+  color: rgb(199, 169, 0);
+  color: white;
+  /* padding: 0 10px 10px; */
+}
+
+.project-links .btn {
+  /* background-color: rgb(199, 169, 0); */
+  /* background-color: rgba(52, 52, 52, 0.247); */
+  background-color: rgba(52, 52, 52, 0.557);
+
+  color: gold;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin: 0px 10px 10px 0px;
+
+  transition: 0.5s;
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-links .btn:hover {
+  background-color: rgba(52, 52, 52, 0.785);
+  /* background: linear-gradient(140deg, rgba(255, 217, 0, 0.13), rgba(255, 255, 255, 0) ); */
+  /* background-color: rgba(255, 217, 0, 0.13); */
+}
+
+.project-links .btn img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  color: white;
+  margin-right: 5px;
+}
+
+.project-links .btn i {
+  color: rgb(255, 255, 255);
+  margin-right: 5px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.project-tags {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-tags i {
+  color: white;
+  margin-right: 0px;
+  margin-top: 10px;
+  font-size: 25px;
+}

@@ -1,0 +1,77 @@
+.home-page {
+    padding: calc(var(--nav-height) + 20px) 20px 50px;
+    background-color: var(--theme-color);
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.home-page .text {
+    font-size: 80px;
+    font-family: "Cal Sans", sans-serif;
+    color: rgb(215, 215, 215);
+    z-index: 1;
+    text-align: center;
+    line-height: 0.8;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.home-page .text span {
+    background-image: -webkit-linear-gradient(45deg, #7319fa, #ff33b4, #ff7e29);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+.home-page .text::before {
+    content: 'MOHAMED MABROUK';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    color: rgba(255, 255, 255, 0.132);
+    font-size: 100px;
+}
+
+.home-page .text span::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    transform: translate(0%, -10%);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 50px 25px rgba(170, 0, 255, 0.88);
+    -moz-box-shadow: 0px 0px 50px 25px rgba(170, 0, 255, 0.88);
+    box-shadow: 0px 0px 100px 45px rgba(170, 0, 255, 0.88);
+}
+
+.home-page img {
+    width: 100%;
+    height: 500px;
+    opacity: 90%;
+    /* filter: grayscale(20%) brightness(150%); */
+    object-fit: cover;
+    border-radius: 2px;
+    z-index: 0;
+}
+
+
+@media (max-width: 542px) {
+    .home-page img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-page .text {
+        font-size: 40px;
+    }
+}

@@ -1,0 +1,76 @@
+<section id="contact-section">
+    <div class="contact-page page">
+        <div data-text="Contact Me" class="page-title">
+            <span>Contact Me</span>
+        </div>
+        <div class="contact-container">
+            <div class="glow"></div>
+            <div class="contact-info">
+                <div class="header">Get in Touch</div>
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="value">
+                        <span class="label">Location:</span> <br />
+                        Cairo, Egypt
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="value">
+                        <span class="label">Email:</span> <br />
+                        mmabroukk404&#64;gmail.com
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="value">
+                        <span class="label">Whatsapp:</span> <br />
+                        +20 1064605182
+                    </div>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/mmabroukk/" target="_blank">
+                        <div class="social-media-item">
+                            <i class="fa-brands fa-square-linkedin"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Mohamed-Mabrouk404" target="_blank">
+                        <div class="social-media-item">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="contact-form">
+                <div class="header">Send Message</div>
+                <form (submit)="sendEmail($event)">
+                    <div class="input-box">
+                        <label for="fullName">Full Name <span class="star">*</span></label>
+                        <input type="text" name="fullName" placeholder="Full name" dir="auto" required>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email <span class="star">*</span></label>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <label for="message">Message <span class="star">*</span></label>
+                        <textarea name="message" placeholder="Type your message..." dir="auto" required></textarea>
+                        <i></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

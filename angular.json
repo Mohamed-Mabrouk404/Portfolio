@@ -27,6 +27,7 @@
               }
             ],
             "styles": [
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -89,8 +90,40 @@
             ],
             "scripts": []
           }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "myPortfolio-front:ionic-cordova-build",
+            "devServerTarget": "myPortfolio-front:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "myPortfolio-front:ionic-cordova-build:production",
+              "devServerTarget": "myPortfolio-front:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "myPortfolio-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "myPortfolio-front:build:production"
+            }
+          }
         }
       }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@schematics/angular"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
     }
   }
 }
