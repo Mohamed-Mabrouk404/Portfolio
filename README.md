@@ -1,6 +1,6 @@
 # MyPortfolio
 
-![Portfolio preview image](images/portfolio-prev.png)
+![Portfolio preview image](public/images/portfolio-prev.png)
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
